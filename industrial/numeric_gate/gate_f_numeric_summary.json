@@ -1,0 +1,7 @@
+{
+  "cases": 19,
+  "method_records": 38,
+  "unknown": 0,
+  "pass_numeric": 1,
+  "note": "Algorithmic tie/root robustness only; not a real-data efficacy claim."
+}

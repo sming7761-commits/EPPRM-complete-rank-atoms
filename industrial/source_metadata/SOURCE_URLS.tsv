@@ -1,0 +1,11 @@
+dataset	asset	url
+DAMADICS	benchmark_definition	https://iair.mchtr.pw.edu.pl/layout/set/print/content/download/173/857/file/damadics-benchmark-definition.zip
+DAMADICS	data_description	https://iair.mchtr.pw.edu.pl/layout/set/print/content/download/161/809/file/damadics-lublin-data-description.zip
+DAMADICS	process_specification	https://iair.mchtr.pw.edu.pl/layout/set/print/content/download/167/833/file/damadics-evapor-boiler.zip
+DAMADICS	actuator_specification	https://iair.mchtr.pw.edu.pl/layout/set/print/content/download/168/837/file/damadics-actuator.zip
+DAMADICS	data_part1	https://iair.mchtr.pw.edu.pl/layout/set/print/content/download/163/817/file/Lublin_all_data_part1.zip
+DAMADICS	data_part2	https://iair.mchtr.pw.edu.pl/layout/set/print/content/download/164/821/file/Lublin_all_data_part2.zip
+DAMADICS	data_part3	https://iair.mchtr.pw.edu.pl/layout/set/print/content/download/165/825/file/Lublin_all_data_part3.zip
+DAMADICS	data_part4	https://iair.mchtr.pw.edu.pl/layout/set/print/content/download/166/829/file/Lublin_all_data_part4.zip
+NASA_IMS	package_api	https://data.nasa.gov/api/3/action/package_show?id=fa6fe9f8-ddd1-4f4e-afe1-2e38c3e5eed5
+WT_HSS	mathworks_repository	https://github.com/mathworks/WindTurbineHighSpeedBearingPrognosis-Data/archive/refs/heads/main.zip
