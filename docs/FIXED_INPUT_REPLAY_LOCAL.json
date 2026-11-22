@@ -1,0 +1,10 @@
+{
+  "status": "PASS_FIXED_INPUT_SI_REPLAY",
+  "inputs": 64,
+  "backend_input_checks": 128,
+  "state_field_comparisons": 6412,
+  "witness_summary_rows_checked": 6,
+  "cctm_decimal_digits": 80,
+  "seconds": 1.889,
+  "scope": "SI equations versus archived reference implementations and stream/batch replay on the original 64 inputs. Witness check uses archived maxima, not fresh raw-data or interval-arithmetic certification."
+}

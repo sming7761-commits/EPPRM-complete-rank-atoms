@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript and identify the archived repository version when reusing these research materials."
+title: "EP-PRM: complete rank atoms for exact streaming monitoring"
+type: software
+authors:
+  - family-names: Sun
+    given-names: Yiming
+  - family-names: Wang
+    given-names: Chunyan
+version: "2026.11.22"

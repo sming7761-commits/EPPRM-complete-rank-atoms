@@ -1,0 +1,5 @@
+﻿distribution,method_a,method_b,n_paired,paired_power_difference,bootstrap_ci95_low,bootstrap_ci95_high,status,source_paired_power_differences_line,source_paired_power_differences_id
+gaussian,EP_PRM_736,Profiled_CCTM_fair,500,0.802,0.766,0.836,COMPLETE,2,c7b0ee4ba956fcc5|698d45dfc0ddabfa|a77644901ca88693|a1cdc034c70a6441
+t5,EP_PRM_736,Profiled_CCTM_fair,500,0.758,0.72,0.794,COMPLETE,9,c7e95e6894dcbe6b|ce305e3f53e1d6cd|b337d8bc2e2e72fa|dee70057d346a389
+exp_centered,EP_PRM_736,Profiled_CCTM_fair,500,0.826,0.794,0.858,COMPLETE,16,f9bb7c11b8d0833d|b0685269eb0f1b38|4f6f8bc9de19654c|8b7d880b502f986a
+skew_mixture,EP_PRM_736,Profiled_CCTM_fair,500,0.706,0.664,0.746,COMPLETE,23,002b2c0dca547131|79a81935fec5c7d4|6794beda3c3e0740|3df36f77a9e0bb7a

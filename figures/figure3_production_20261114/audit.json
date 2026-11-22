@@ -1,0 +1,88 @@
+{
+  "skill": "nature-figure-production",
+  "geometry_mm": [
+    180,
+    181
+  ],
+  "font_violations": 0,
+  "text_sizes": [
+    [
+      11.0,
+      11.0,
+      4,
+      "Reliability and weak-fault detection under unknown dynamics",
+      "over"
+    ],
+    [
+      8.5,
+      8.5,
+      7,
+      "Gaussian",
+      "ok"
+    ],
+    [
+      8.0,
+      8.0,
+      39,
+      "False alarms (%)",
+      "ok"
+    ],
+    [
+      7.5,
+      7.5,
+      52,
+      "0",
+      "ok"
+    ],
+    [
+      7.0,
+      7.0,
+      43,
+      "49.0",
+      "ok"
+    ]
+  ],
+  "source_records": 48000,
+  "operating_points": 32,
+  "paired_contrasts": 8,
+  "joint_tables": 8,
+  "pairing": "trajectory_id, fault only, 500 pairs per noise/comparison",
+  "numeric_validation": "All 32 health and fault totals match frozen source; all 8 discordant differences match frozen paired effects.",
+  "colors": {
+    "EP_PRM_736": "#008F83",
+    "Profiled_CCTM_fair": "#7E64A6",
+    "Old_K8": "#8A8F98",
+    "OLS_PlugIn_PRM": "#3C5488",
+    "Gaussian_GLR": "#A6761D",
+    "Gaussian_CUSUM": "#E69F00",
+    "Conformal_CUSUM": "#C44E52",
+    "Oracle_PRM": "#303A46"
+  },
+  "no_new_experiments": true,
+  "assembly": "Simple rectangular native vector assembly, with separate panel and legend exports.",
+  "statistical_boundaries": [
+    "Operating points have different threshold/calibration protocols; not equal-FPR superiority.",
+    "Zero observed false alarms are not zero population risk.",
+    "Power excludes prefault alarms and retains all 500 fault trajectories in denominator.",
+    "K8 symmetry guarantee does not cover skewed innovations.",
+    "Frozen bootstrap intervals reused, not recomputed or selected."
+  ],
+  "source_hashes": {
+    "FIG3A_FPR_POWER_POINTS.csv": "a4ab564726836b260bc67087402323ea71da44934196344c47da1479e6f65dcc",
+    "FIG3B_PAIRED_EP_VS_OLDK8.csv": "5d0aca83f291163246dd3a05bac9fc716385eceee5c71ef03e3e594e556e8937",
+    "FIG3C_PAIRED_EP_VS_CCTM.csv": "dfb7004a097b9f071d9e1484a4ada09aba75e1645434ec61aec7172447a94c3f",
+    "method_records.csv": "fc50e905d5302a20cb274175e6e203c3a65958a5a826f7b0af5cfa6a7d517ba7",
+    "paired_joint_outcomes.csv": "24692f236d53431869eb868a2705f747d99f25e955fde867d6f3033b97ea23bf"
+  },
+  "svg_text_objects": 108,
+  "svg_raster_images": 0,
+  "production_checks": {
+    "embedded_truetype_fonts": "ArialMT, Arial-BoldMT; pdffonts verified",
+    "editable_svg": true,
+    "rgb": true,
+    "critical": 0,
+    "major": 0,
+    "minor": 0,
+    "visual_review": "Reviewed after moving effect values to a separate column; matrix exported as vector cells."
+  }
+}

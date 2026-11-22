@@ -1,0 +1,6 @@
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+GXFSXB+STIXGeneral-Regular           CID TrueType      Identity-H       yes yes yes     15  0
+BSLSOQ+STIXGeneral-Italic            CID TrueType      Identity-H       yes yes yes     22  0
+GHVFZG+ArialMT                       CID TrueType      Identity-H       yes yes yes     29  0
+DQODBV+Arial-BoldMT                  CID TrueType      Identity-H       yes yes yes     36  0

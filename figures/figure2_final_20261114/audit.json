@@ -1,0 +1,139 @@
+{
+  "skill": "nature-figure-production",
+  "geometry_mm": [
+    180,
+    167
+  ],
+  "font_violations": 0,
+  "text_sizes": [
+    [
+      11.0,
+      11.0,
+      1,
+      "Exact streaming updates through inherited rank states",
+      "over"
+    ],
+    [
+      10.5,
+      10.5,
+      4,
+      "a",
+      "ok"
+    ],
+    [
+      10.0,
+      10.0,
+      2,
+      "$G_t\\leq W_t(a_0),\\quad a_0\\in\\mathcal{A}$",
+      "ok"
+    ],
+    [
+      9.0,
+      9.0,
+      3,
+      "$S_t=\\Phi_t(S_{t-1},R_t)$",
+      "ok"
+    ],
+    [
+      8.6,
+      8.6,
+      1,
+      "$G_t^{\\mathrm{stream}}=G_t^{\\mathrm{batch}}=\\inf_a W_t(a)$",
+      "ok"
+    ],
+    [
+      8.5,
+      8.5,
+      9,
+      "Refine, inherit and update",
+      "ok"
+    ],
+    [
+      8.0,
+      8.0,
+      7,
+      "Refine atoms \u00b7 inherit shared states \u00b7 update once with the current rank",
+      "ok"
+    ],
+    [
+      7.4,
+      7.4,
+      3,
+      "$S_{t-1}(C)$",
+      "ok"
+    ],
+    [
+      7.0,
+      7.0,
+      22,
+      "Shared past; one current-rank update per child",
+      "ok"
+    ],
+    [
+      6.8,
+      6.8,
+      6,
+      "New equality event $a_\\star$",
+      "ok"
+    ],
+    [
+      6.7,
+      6.7,
+      4,
+      "PRM: stream",
+      "ok"
+    ],
+    [
+      6.6,
+      6.6,
+      1,
+      "Alternative finite-dimensional states",
+      "ok"
+    ],
+    [
+      6.5,
+      6.5,
+      1,
+      "or",
+      "ok"
+    ]
+  ],
+  "arrow_count": 11,
+  "shortest_arrow_mm": 3.9000000000000057,
+  "rank_bridge": "R = 1 + q, calibration-first ties (<=), verified against rank_at on saved input.",
+  "historical_case": "random_48",
+  "existing_audit_inputs": 64,
+  "existing_audit_backend_checks": 128,
+  "replay_max_abs_errors": {
+    "PRM": 0.0,
+    "CCTM": 0.0
+  },
+  "scope": "Schematic a,b,d; replay of one archived fixed input c. The 128 archived PASS rows are checked, not newly rerun.",
+  "guarantees": "Point-parameter event domination; marginal PRM and budgeted CCTM conditions are distinct. G is not asserted to be a martingale/e-process.",
+  "semantic_colors": {
+    "geometry": "#3C5488",
+    "PRM/update": "#008F83",
+    "CCTM": "#7E64A6",
+    "root": "#D55E00"
+  },
+  "source_hashes": {
+    "generic_checks.csv": "74f1e34d0547f200923c695f5db4dcabc35589b2eedeb7c7a5f3c87ab18113ec",
+    "historical_random_48_input.json": "c0d619276eae1cff5d2efd2d5509f1b0eb0b9f21f7525ae6ec5bc5e68e410c24",
+    "stream_batch_replay.csv": "b5a4df75e2672a493cc2f4f9e0c463afd672e6319d4fdf9b3d45f9abc8299319"
+  },
+  "schematic_text_bbox_overlaps": [],
+  "final_wording": "Shared rank interface; fixed input replay; detector-specific guarantee notes in caption; shortened archival audit footer.",
+  "source_preflight": {
+    "ready": true,
+    "strict": false,
+    "counts": {
+      "PASS": 14,
+      "WARN": 0,
+      "FAIL": 0
+    }
+  },
+  "unchanged_replay_rows": 10,
+  "svg_raster_images": 0,
+  "font_check": "Arial and STIX TrueType embedded, verified with pdffonts.",
+  "frozen_delivery": "Figure2_FINAL; wording-only changes from reviewed refinement."
+}

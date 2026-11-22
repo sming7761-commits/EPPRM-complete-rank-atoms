@@ -1,0 +1,9 @@
+distribution,comparator,both,ep_only,comparator_only,neither,n
+gaussian,Old_K8,173,256,11,60,500
+gaussian,Profiled_CCTM_fair,27,402,1,70,500
+t5,Old_K8,70,319,4,107,500
+t5,Profiled_CCTM_fair,10,379,0,111,500
+exp_centered,Old_K8,1,460,0,39,500
+exp_centered,Profiled_CCTM_fair,48,413,0,39,500
+skew_mixture,Old_K8,76,287,12,125,500
+skew_mixture,Profiled_CCTM_fair,10,353,0,137,500

@@ -1,0 +1,65 @@
+[
+  {
+    "filename": "EPPRM_COMPLETE_RESEARCH_PACKAGE_FORMAL_MAIN_COMPLETE_20261110_185236.zip",
+    "bytes": 508114536,
+    "sha256": "864a837c2257941dc42fe2b141bbecf7b893a2ec19e42e8fac0585ce1fd81ecd",
+    "provided_checksum_matches": true,
+    "intended_as_release_asset": true
+  },
+  {
+    "filename": "EPPRM_FINAL_SERVER_DELTA_20261112.zip",
+    "bytes": 440205,
+    "sha256": "85b52f53bd385b53f255b3e9b8f70cc92da3771ffb22ef32d9758fed434081bb",
+    "provided_checksum_matches": true,
+    "intended_as_release_asset": false
+  },
+  {
+    "filename": "EPPRM_GATE_F_TIESAFE_EXACTKEY_PATCH_V2_20261111.zip",
+    "bytes": 147830,
+    "sha256": "850f7e95d0cd3456563cade4f84434de6814b11a5ba0e81f062b5eeb4e6fc8a8",
+    "provided_checksum_matches": true,
+    "intended_as_release_asset": false
+  },
+  {
+    "filename": "EPPRM_GATE_F2_HEALTHONLY_PATCH_20261112.zip",
+    "bytes": 13775,
+    "sha256": "d6a9bfbc767ae730466c861cf96a848cbf7d4469632adc33abb9c0251918ff5f",
+    "provided_checksum_matches": true,
+    "intended_as_release_asset": false
+  },
+  {
+    "filename": "EPPRM_GATE_F2_HEALTHONLY_RESULTS_20261112.zip",
+    "bytes": 254759,
+    "sha256": "1da1c7e2f220870ac65f22b95f315b655cec3294513016be9b0b1c6427f95f66",
+    "provided_checksum_matches": true,
+    "intended_as_release_asset": false
+  },
+  {
+    "filename": "EPPRM_GATE_F3_DETECTION_PATCH_20261112.zip",
+    "bytes": 18558,
+    "sha256": "17c45da20bfa15650ff390a129dcec275d81edcc5ec74c729581a3a955d162d4",
+    "provided_checksum_matches": true,
+    "intended_as_release_asset": false
+  },
+  {
+    "filename": "EPPRM_GATE_F3_DETECTION_RESULTS_20261112.zip",
+    "bytes": 1502054,
+    "sha256": "8e0d37b9cefa61a8fd331214bff1443c4315338adf6e4a40a7bb982f7c41d9f8",
+    "provided_checksum_matches": true,
+    "intended_as_release_asset": false
+  },
+  {
+    "filename": "EPPRM_Q1_EQUAL_FPR_PATCH_20261110.zip",
+    "bytes": 3920,
+    "sha256": "781d889dab302314b627534f36e44df40f997a056e5328a866babf78d7b19d51",
+    "provided_checksum_matches": true,
+    "intended_as_release_asset": false
+  },
+  {
+    "filename": "EPPRM_Q1_EQUAL_FPR_RESULTS_20261110.zip",
+    "bytes": 6377,
+    "sha256": "2054ba3c8a7785fe2b47226a4f3e950c62e53307f1adf68ad05d984cf87d5abb",
+    "provided_checksum_matches": true,
+    "intended_as_release_asset": false
+  }
+]

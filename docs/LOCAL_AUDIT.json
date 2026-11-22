@@ -1,0 +1,16 @@
+{
+  "copied_files": 401,
+  "source_snapshots_byte_preserved": true,
+  "industrial_final_snapshot_matches_tiesafe_patch": true,
+  "python_files_syntax_checked": 58,
+  "files_larger_than_25_MiB": [],
+  "potential_secret_patterns": [],
+  "secret_scan_scope": "Known private-key and GitHub/AWS key patterns only; not a guarantee of detecting every credential.",
+  "formal_method_records": 48000,
+  "unique_formal_keys": 48000,
+  "industrial_method_records": 72,
+  "source_files_rechecked": 401,
+  "complete_production_reexecution": false,
+  "full_raw_and_trace_release_upload_pending": true,
+  "license_selected": false
+}

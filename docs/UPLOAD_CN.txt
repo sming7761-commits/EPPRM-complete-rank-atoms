@@ -1,0 +1,18 @@
+GitHub上传说明
+
+1. 建议仓库名：EPPRM-complete-rank-atoms。选择Public时，源码和数据就会被公众看到；本轮未代你上传。
+2. 解压交付ZIP，把EPPRM_GITHUB_READY_20261122里面的文件和文件夹上传到仓库根目录，不要只上传这一个ZIP。
+3. 先不要上传论文审阅包：其中含未完成的数据声明。本公开包只放科研复核所需内容。
+4. 许可证暂未代你选择。不要误点MIT后又认为它禁止他人修改或使用。可以先作为公开研究材料供复核，再由作者明确许可。
+5. 普通仓库不放508 MB完整仿真ZIP。创建一个Release（例如v1.0.0），在Release附件中上传该ZIP及它的.sha256文件。
+6. 完整仿真ZIP原位置：C:/Users/symin/Desktop/winscp/EPPRM_COMPLETE_RESEARCH_PACKAGE_FORMAL_MAIN_COMPLETE_20261110_185236.zip
+7. 不必把1.3 GB的旧真实数据大包上传。最终工业代码、F2筛选、派生特征、F3完整结果已经整理进本包；原始工业数据仍指向原提供方。
+8. 提交仓库后，请把仓库地址及Release地址发回，便于把真实版本链接填入论文。
+9. KBS要求数据存储与链接，不能把本次准备工作当成期刊已确认GitHub链接合规。为稳定引用，建议在Release固定后用Zenodo归档生成DOI；这一步可与GitHub联动，不需要重复整理文件。
+
+上传前可在解压目录执行：python verify_repository.py
+独立小例子复核：python tools/replay_reference_audit.py（需numpy和mpmath）
+完整环境安装见README.md；不要把旧pip_freeze中的file:///本机构建路径直接当成可安装requirements。
+
+核心文件的精确路径与用途：docs/CORE_FILES.csv。
+按压缩包成员逐文件追溯：docs/SOURCE_FILE_PROVENANCE.csv。
