@@ -1,0 +1,5 @@
+﻿distribution,ep_power,oracle_power,ep_minus_oracle_paired,ci95_low,ci95_high,oracle_is_infeasible_in_real_deployment,source_ep_line,source_ep_id,source_oracle_line,source_oracle_id,source_paired_power_differences_line,source_paired_power_differences_id
+gaussian,0.858,0.928,-0.07,-0.1,-0.04,TRUE,3,2606f14c32c73041,17,8c2766ad01d03d5e,8,f7b83a6eace7fd48|07bb173774c328fd|ec0928031c719870
+t5,0.778,0.874,-0.096,-0.128,-0.066,TRUE,19,37ce74403cedacb4,33,1f5b3f7c6db280a0,15,f02a615f5cbf413b|b342c6506300f65d|f083d7131284a59a
+exp_centered,0.922,0.954,-0.032,-0.06,-0.004,TRUE,35,1eb7eef7f9a50eec,49,9a31eb0b7db8219c,22,ff5b4b19037d4fd0|887831d6554e38f4|2d030ba6c2ef6497
+skew_mixture,0.726,0.834,-0.108,-0.144,-0.07,TRUE,51,506fbc61740453c1,65,66246b8842930d06,29,b1e23373ca99082b|b6b1e6397ea9f07b|a045eee0c4c166eb

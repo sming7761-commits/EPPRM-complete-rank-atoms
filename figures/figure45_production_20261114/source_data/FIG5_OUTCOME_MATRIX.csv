@@ -1,0 +1,73 @@
+method,case_id,status,first_alarm
+EP_PRM,F2_09112001_A1_HEALTH,healthy quiet,0
+EP_PRM,F2_DAM_09112001_A1_57275,detected,260
+EP_PRM,F2_DAM_09112001_A1_58520,prefault alarm,107
+EP_PRM,F2_17112001_A1_HEALTH,healthy quiet,0
+EP_PRM,F2_DAM_17112001_A1_54600,not detected,0
+EP_PRM,F2_DAM_17112001_A1_56670,detected,298
+EP_PRM,F2_17112001_A3_HEALTH,healthy quiet,0
+EP_PRM,F2_DAM_17112001_A3_57475,not detected,0
+EP_PRM,F2_30102001_A1_HEALTH,healthy quiet,0
+EP_PRM,F2_DAM_30102001_A1_58800,not detected,0
+EP_PRM,F2_30102001_A3_HEALTH,healthy quiet,0
+EP_PRM,F2_DAM_30102001_A3_57340,not detected,0
+Profiled_CCTM,F2_09112001_A1_HEALTH,healthy quiet,0
+Profiled_CCTM,F2_DAM_09112001_A1_57275,not detected,0
+Profiled_CCTM,F2_DAM_09112001_A1_58520,not detected,0
+Profiled_CCTM,F2_17112001_A1_HEALTH,healthy quiet,0
+Profiled_CCTM,F2_DAM_17112001_A1_54600,not detected,0
+Profiled_CCTM,F2_DAM_17112001_A1_56670,not detected,0
+Profiled_CCTM,F2_17112001_A3_HEALTH,healthy quiet,0
+Profiled_CCTM,F2_DAM_17112001_A3_57475,not detected,0
+Profiled_CCTM,F2_30102001_A1_HEALTH,healthy quiet,0
+Profiled_CCTM,F2_DAM_30102001_A1_58800,not detected,0
+Profiled_CCTM,F2_30102001_A3_HEALTH,healthy quiet,0
+Profiled_CCTM,F2_DAM_30102001_A3_57340,not detected,0
+OLS_PlugIn_PRM,F2_09112001_A1_HEALTH,healthy quiet,0
+OLS_PlugIn_PRM,F2_DAM_09112001_A1_57275,detected,211
+OLS_PlugIn_PRM,F2_DAM_09112001_A1_58520,prefault alarm,38
+OLS_PlugIn_PRM,F2_17112001_A1_HEALTH,healthy quiet,0
+OLS_PlugIn_PRM,F2_DAM_17112001_A1_54600,detected,291
+OLS_PlugIn_PRM,F2_DAM_17112001_A1_56670,detected,224
+OLS_PlugIn_PRM,F2_17112001_A3_HEALTH,healthy alarm,70
+OLS_PlugIn_PRM,F2_DAM_17112001_A3_57475,detected,210
+OLS_PlugIn_PRM,F2_30102001_A1_HEALTH,healthy quiet,0
+OLS_PlugIn_PRM,F2_DAM_30102001_A1_58800,not detected,0
+OLS_PlugIn_PRM,F2_30102001_A3_HEALTH,healthy quiet,0
+OLS_PlugIn_PRM,F2_DAM_30102001_A3_57340,prefault alarm,121
+Gaussian_GLR,F2_09112001_A1_HEALTH,healthy quiet,0
+Gaussian_GLR,F2_DAM_09112001_A1_57275,detected,206
+Gaussian_GLR,F2_DAM_09112001_A1_58520,prefault alarm,85
+Gaussian_GLR,F2_17112001_A1_HEALTH,healthy alarm,351
+Gaussian_GLR,F2_DAM_17112001_A1_54600,detected,272
+Gaussian_GLR,F2_DAM_17112001_A1_56670,detected,208
+Gaussian_GLR,F2_17112001_A3_HEALTH,healthy alarm,358
+Gaussian_GLR,F2_DAM_17112001_A3_57475,detected,207
+Gaussian_GLR,F2_30102001_A1_HEALTH,healthy quiet,0
+Gaussian_GLR,F2_DAM_30102001_A1_58800,detected,287
+Gaussian_GLR,F2_30102001_A3_HEALTH,healthy quiet,0
+Gaussian_GLR,F2_DAM_30102001_A3_57340,not detected,0
+Gaussian_CUSUM,F2_09112001_A1_HEALTH,healthy quiet,0
+Gaussian_CUSUM,F2_DAM_09112001_A1_57275,detected,206
+Gaussian_CUSUM,F2_DAM_09112001_A1_58520,prefault alarm,75
+Gaussian_CUSUM,F2_17112001_A1_HEALTH,healthy alarm,353
+Gaussian_CUSUM,F2_DAM_17112001_A1_54600,detected,272
+Gaussian_CUSUM,F2_DAM_17112001_A1_56670,detected,208
+Gaussian_CUSUM,F2_17112001_A3_HEALTH,healthy alarm,358
+Gaussian_CUSUM,F2_DAM_17112001_A3_57475,detected,207
+Gaussian_CUSUM,F2_30102001_A1_HEALTH,healthy quiet,0
+Gaussian_CUSUM,F2_DAM_30102001_A1_58800,detected,304
+Gaussian_CUSUM,F2_30102001_A3_HEALTH,healthy quiet,0
+Gaussian_CUSUM,F2_DAM_30102001_A3_57340,not detected,0
+Conformal_CUSUM,F2_09112001_A1_HEALTH,healthy quiet,0
+Conformal_CUSUM,F2_DAM_09112001_A1_57275,detected,206
+Conformal_CUSUM,F2_DAM_09112001_A1_58520,prefault alarm,99
+Conformal_CUSUM,F2_17112001_A1_HEALTH,healthy quiet,0
+Conformal_CUSUM,F2_DAM_17112001_A1_54600,detected,274
+Conformal_CUSUM,F2_DAM_17112001_A1_56670,detected,208
+Conformal_CUSUM,F2_17112001_A3_HEALTH,healthy alarm,358
+Conformal_CUSUM,F2_DAM_17112001_A3_57475,detected,207
+Conformal_CUSUM,F2_30102001_A1_HEALTH,healthy quiet,0
+Conformal_CUSUM,F2_DAM_30102001_A1_58800,not detected,0
+Conformal_CUSUM,F2_30102001_A3_HEALTH,healthy alarm,401
+Conformal_CUSUM,F2_DAM_30102001_A3_57340,not detected,0

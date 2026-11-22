@@ -1,0 +1,7 @@
+{
+  "rule": "First EP-detected primary case and first non-detected/no-prefault primary case in statistical_unit then case_id order. Illustrative contrast, not performance estimate.",
+  "case_ids": [
+    "F2_DAM_09112001_A1_57275",
+    "F2_DAM_17112001_A1_54600"
+  ]
+}

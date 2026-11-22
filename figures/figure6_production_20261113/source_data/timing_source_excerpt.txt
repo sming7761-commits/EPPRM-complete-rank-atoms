@@ -1,0 +1,51 @@
+
+def compute_method(m,d,sc,rep,data,xy,p,thresholds):
+    cy,cx,oy,ox=xy
+    thr=method_threshold(d,m,thresholds)
+    tic=time.perf_counter();status='COMPLETE';fallback=0;atoms=None;params=None;err=''
+    # RSS high-watermark sampled during actual method execution (not just after).
+    peak=[get_rss_mb()];done=threading.Event()
+    def memory_sample():
+        while not done.wait(.025):
+            try:peak[0]=max(peak[0],get_rss_mb())
+            except Exception:pass
+    monitor=threading.Thread(target=memory_sample,daemon=True);monitor.start()
+    try:
+        if m in p:trace=np.asarray(p[m],np.float64)
+        elif m=='Old_K8':trace=np.asarray(core.old_k8_path(data['reference_A'],data['reference_B'],data['online_states']),np.float64)
+        elif m=='Profiled_CCTM_fair':
+            out=core.cctm_fullatom_stream(cy,cx,oy,ox,delta=.01,D=.5,C=.1,smooth=1e-6,stop_at_alarm=False,full_path=True)
+            trace=np.asarray(out['profile_path'],np.float64)
+            atoms=np.asarray(out['atom_counts'],np.int64)
+            params=np.asarray(out['worst_parameters'],np.float64)
+            fallback=int(out['status'].startswith('SMALL_INPUT'))
+            status='GENERAL_POSITION_FLOAT_NOT_FORMAL_CERTIFIED' if out['status'].startswith('GENERAL_POSITION') else out['status']
+        elif m=='EP_PRM_736':
+            from full_domain_prm_atoms_fast import stream_fullatom
+            out=stream_fullatom(cy,cx,oy,ox,threshold=20.)
+            trace=np.asarray(out['profile_path'],np.float64)
+            atoms=np.asarray(out['atom_counts'],np.int64)
+            params=np.asarray(out['worst_parameter'],np.float64)
+            status=out['status']
+        else:raise RuntimeError('Unknown frozen method '+m)
+        if trace.shape!=(601,) or not np.isfinite(trace).all():raise ArithmeticError('nonfinite or incomplete path')
+    except Exception as e:
+        trace=np.full(601,np.nan)
+        status='UNKNOWN' if isinstance(e,core.NumericUnknown) else 'ERROR'
+        err=repr(e)+'\n'+traceback.format_exc()
+    runtime=time.perf_counter()-tic
+    done.set();monitor.join(timeout=1)
+    rss=max(peak[0],get_rss_mb())
+    if atoms is None:atoms=np.full(601,-1,dtype=np.int64)
+    if params is None:params=np.full(601,np.nan)
+    trace=np.asarray(trace,dtype=np.float64)
+    mask=np.isfinite(trace)
+    running=np.maximum.accumulate(np.where(mask,trace,-np.inf))
+    running[~mask]=np.nan
+    crossings=np.where(mask,(trace>=thr).astype(np.int8),-1).astype(np.int8)
+    arrays=dict(value=trace,running_max=running,crossing=crossings,threshold=np.float64(thr),
+        computed=mask.astype(np.uint8),time_index=np.arange(601,dtype=np.int32),
+        atom_count=atoms,worst_parameter=params,exact_fallback_count=np.int64(fallback),
+        status=np.array(status),runtime_seconds=np.float64(runtime),peak_memory_mb=np.float64(rss),
+        error_message=np.array(err))
+    return arrays,err

@@ -1,0 +1,44 @@
+protocol_version: 1.0
+status: FROZEN
+model:
+  a0: 0.9
+  N: 736
+  T: 600
+  change_point: 357
+  scale_factor: 1.5
+  healthy_budget: {A: 112, B: 624}
+distributions:
+  - gaussian
+  - t5
+  - exp_centered
+  - skew_mixture
+sample_size:
+  health_per_distribution: 1000
+  fault_per_distribution: 500
+  independent_calibration_per_distribution: 5000
+evaluation:
+  health_alarm: 'any alarm during 1:600'
+  prefault_alarm: 'first_alarm < 357'
+  successful_detection: 'first_alarm >= 357 and no earlier alarm'
+  censored_delay: 244
+  no_alarm: 0
+  numeric_failures: NEVER_DROP
+methods:
+  - {name: EP_PRM_736, threshold: 20, source: MARGINAL_ANYTIME_PFA}
+  - {name: Profiled_CCTM_fair, threshold: 25, source: CCTM_DELTA_0.01_PLUS_ALPHA_0.04}
+  - {name: OLS_PlugIn_PRM, source: INDEPENDENT_EMPIRICAL_PFA}
+  - {name: Gaussian_GLR, source: INDEPENDENT_EMPIRICAL_PFA}
+  - {name: Gaussian_CUSUM, source: INDEPENDENT_EMPIRICAL_PFA}
+  - {name: Conformal_CUSUM, source: INDEPENDENT_EMPIRICAL_PFA_NOT_ARL}
+  - {name: Old_K8, threshold: 25, source: LEGACY_SYMMETRY_ASSUMPTIONS}
+  - {name: Oracle_PRM, threshold: 20, source: KNOWS_TRUE_PARAMETER}
+randomization:
+  formal_seed_prefix: 20261109000000
+  calibration_seed_prefix: 20261110000000
+  pilot_seed_prefix: 20261107000000
+  mapping: 'prefix + distribution_index*100000000 + scene_code*10000000 + replicate'
+storage:
+  raw_arrays: 'partitioned compressed NumPy NPZ; all original float64 arrays retained'
+  traces: 'compressed NPZ; includes time, value, running max, threshold, crossing and status mask'
+  summaries: 'CSV; foreign key trajectory_id and method'
+  unavailable_trace_rule: 'NOT_COMPUTED, never impute or write a witness curve as exact infimum'

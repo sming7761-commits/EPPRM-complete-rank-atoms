@@ -1,0 +1,1 @@
+Empirical thresholds are frozen only after 5,000 independent healthy calibration maxima per distribution. At alpha=.05, apply conformal rank ceil((n+1)*(.95)) and take nextafter(value,+infinity). Exact tie handling is deterministic. Calibration seed block and formal block are disjoint.

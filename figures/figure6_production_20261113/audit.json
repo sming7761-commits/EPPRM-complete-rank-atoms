@@ -1,0 +1,86 @@
+{
+  "skill": "nature-figure-production",
+  "geometry_mm": [
+    180,
+    182
+  ],
+  "text_sizes": [
+    [
+      11.3,
+      11.3,
+      1,
+      "The computational cost of complete parameter profiling",
+      "over"
+    ],
+    [
+      11.0,
+      11.0,
+      4,
+      "a",
+      "ok"
+    ],
+    [
+      9.0,
+      9.0,
+      4,
+      "Runtime distributions",
+      "ok"
+    ],
+    [
+      8.0,
+      8.0,
+      6,
+      "Gaussian",
+      "ok"
+    ],
+    [
+      7.5,
+      7.5,
+      93,
+      "Runtime (s)",
+      "ok"
+    ],
+    [
+      7.0,
+      7.0,
+      4,
+      "n = 2,000",
+      "ok"
+    ],
+    [
+      6.5,
+      6.5,
+      14,
+      "H: 1000\nF: 500",
+      "ok"
+    ]
+  ],
+  "font_violations": 0,
+  "total_source_rows": 48000,
+  "profile_rows": 12000,
+  "full_scan_rows_plotted": 11994,
+  "excluded_repair_rows": 6,
+  "fault_ratio_pairs": 2000,
+  "semantic_colors": {
+    "EP_PRM_736": "#008F83",
+    "Profiled_CCTM_fair": "#7E64A6"
+  },
+  "timing": "perf_counter wall time inside compute_method; full end-to-end baseline timing unavailable",
+  "data_integrity": "Frozen fault median times matched exactly; no new experiments",
+  "caveats": [
+    "6 repair records omitted only from cost analysis because atom counts are absent.",
+    "Recorded wall time is not CPU time, isolated steady-state benchmark, or per-step latency.",
+    "Full time includes monitoring overhead and potential first-call compilation; no post hoc trimming.",
+    "Basic paths were precomputed outside this timer; therefore no all-method speed ranking is shown.",
+    "Only fixed N=736,T=600; no empirical asymptotic scaling claim."
+  ],
+  "source_hashes": {
+    "cost_power_frozen.csv": "75eeaa837515e5920c424158dd7c0f10e2590ec38fac6f116b13d10c09318e2c",
+    "excluded_repair_records.csv": "15fcd08d281fb4bf9d925dad793b89f2b74ad59ac44e6a5428dc7f11eba352fc",
+    "paired_runtime_ratios.csv": "52bcff5ecbb56e3a6a64a13d3c5db9069282be95c54bd1e3352d7a0db112a7de",
+    "runtime_atoms.csv": "b3a3e6c69e4fdce505cfd4309127b5ca382e47b4329d6bb64000fa88e5105095",
+    "runtime_distribution_summary.csv": "68898ea4bde438bf902cb16f9233afb5b3ff8343439f446d563ff67b475b86e0",
+    "server_runtime_info.txt": "dc2a4b5294a5b714f6fec459d9e47c2cbebb4f44df6132ce0e1ca9bd60dfb078",
+    "timing_source_excerpt.txt": "73cec54880a73a67b3fa1e5f893ef5285cbfd5878ce4a14893526ba2f288bd25"
+  }
+}

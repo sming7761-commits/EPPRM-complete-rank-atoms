@@ -1,0 +1,25 @@
+{
+  "frozen_units": [
+    "09112001_A1",
+    "17112001_A1",
+    "17112001_A3",
+    "30102001_A1",
+    "30102001_A3"
+  ],
+  "primary_endpoint": "earliest fault cluster per statistical unit",
+  "secondary_endpoint": "all seven fault clusters",
+  "theoretical_thresholds": {
+    "EP_PRM": 20,
+    "Profiled_CCTM": 25
+  },
+  "empirical_baselines": [
+    "OLS_PlugIn_PRM",
+    "Gaussian_GLR",
+    "Gaussian_CUSUM",
+    "Conformal_CUSUM"
+  ],
+  "bootstrap_reps": 5000,
+  "target_full_window_fpr": 0.05,
+  "bootstrap_source": "fixed 737-point calibration segment only",
+  "fault_results_used_for_thresholds": false
+}
