@@ -1,0 +1,17 @@
+{
+  "analysis": "secondary equal-false-alarm comparison",
+  "formal_main_overwritten": false,
+  "calibration_n_per_distribution": 5000,
+  "fixed_grid": [
+    0.005,
+    0.01,
+    0.02,
+    0.05
+  ],
+  "primary_fixed_grid_point": 0.01,
+  "posthoc_match_disclosure": "Target alpha equals EP-PRM observed formal-health FPR and is therefore labelled post-main/posthoc; baseline thresholds still use independent calibration data only.",
+  "ep_threshold": 20,
+  "ep_threshold_source": "marginal anytime PFA",
+  "fault_data_used_for_threshold_selection": false,
+  "bootstrap_replicates": 5000
+}

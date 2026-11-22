@@ -1,0 +1,27 @@
+{
+  "selection_length": 3000,
+  "validation_length": 1500,
+  "calibration_length": 737,
+  "healthy_control_length": 601,
+  "gap": 60,
+  "monitor_length": 601,
+  "orders": [
+    1,
+    2,
+    4,
+    8,
+    12,
+    20,
+    30
+  ],
+  "selection_rule": "minimum BIC on selection only",
+  "validation": {
+    "abs_a_lt": 0.99,
+    "max_abs_residual_acf_lags_1_10_le": 0.1,
+    "ljung_box_p_ge": 0.01,
+    "variance_ratio_le": 2,
+    "half_mean_shift_sd_le": 0.5,
+    "tie_fraction_le": 0.01,
+    "n_transitions_ge": 100
+  }
+}

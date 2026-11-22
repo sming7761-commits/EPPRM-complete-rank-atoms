@@ -1,0 +1,26 @@
+{
+  "gaussian": {
+    "OLS_PlugIn_PRM": 16.90831436746163,
+    "Gaussian_GLR": 7.919321594673824,
+    "Gaussian_CUSUM": 6.874252045670917,
+    "Conformal_CUSUM": 6.871940650930594
+  },
+  "t5": {
+    "OLS_PlugIn_PRM": 14.707606301559323,
+    "Gaussian_GLR": 39.722253719972926,
+    "Gaussian_CUSUM": 27.09083811003883,
+    "Conformal_CUSUM": 6.796875764074193
+  },
+  "exp_centered": {
+    "OLS_PlugIn_PRM": 17.92250234972414,
+    "Gaussian_GLR": 37.102768418715385,
+    "Gaussian_CUSUM": 28.19028787936176,
+    "Conformal_CUSUM": 7.008220570188859
+  },
+  "skew_mixture": {
+    "OLS_PlugIn_PRM": 16.293993058787688,
+    "Gaussian_GLR": 10.087641199730454,
+    "Gaussian_CUSUM": 9.062147989386688,
+    "Conformal_CUSUM": 6.9251718976393235
+  }
+}

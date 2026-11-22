@@ -1,0 +1,22 @@
+{
+  "trajectory_id": "FORMAL_skew_mixture_health_0217",
+  "method": "EP_PRM_736",
+  "distribution": "skew_mixture",
+  "scenario": "health",
+  "replicate": 217,
+  "seed": 20261409000217,
+  "threshold": 20.0,
+  "threshold_source": "MARGINAL_ANYTIME_PFA",
+  "first_alarm": -1,
+  "prefault_alarm": 0,
+  "detected_after_change": 0,
+  "delay": 244,
+  "censored": 1,
+  "max_statistic": NaN,
+  "runtime_seconds": 3.478454846999739,
+  "peak_memory_mb": 193.421875,
+  "atom_count_final": "",
+  "exact_fallback_count": 0,
+  "numeric_status": "UNKNOWN",
+  "error_message": "NumericUnknown('UNKNOWN at time 348: root too close to old atom to certify binary64 ordering')\nTraceback (most recent call last):\n  File \"/root/epprm/EPPRM_COMPLETE_RESEARCH_PACKAGE/01_source/epprm/full_domain_prm_atoms_fast.py\", line 74, in stream_fullatom\n    r,inc=_newroots(cy,cx,y,x,lo,hi,edges)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/epprm/EPPRM_COMPLETE_RESEARCH_PACKAGE/01_source/cctm_profile/full_domain_cctm_atoms_fast.py\", line 112, in _newroots\n    raise NumericUnknown('root too close to old atom to certify binary64 ordering')\nfull_domain_cctm_atoms_fast.NumericUnknown: root too close to old atom to certify binary64 ordering\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/root/epprm/EPPRM_COMPLETE_RESEARCH_PACKAGE/12_reproduction/run_sharded.py\", line 76, in compute_method\n    out=stream_fullatom(cy,cx,oy,ox,threshold=20.)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/epprm/EPPRM_COMPLETE_RESEARCH_PACKAGE/01_source/epprm/full_domain_prm_atoms_fast.py\", line 79, in stream_fullatom\n    raise NumericUnknown(f'UNKNOWN at time {t}: {exc}') from exc\nfull_domain_cctm_atoms_fast.NumericUnknown: UNKNOWN at time 348: root too close to old atom to certify binary64 ordering\n"
+}

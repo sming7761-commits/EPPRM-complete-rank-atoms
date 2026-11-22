@@ -1,0 +1,22 @@
+{
+  "trajectory_id": "FORMAL_skew_mixture_health_0819",
+  "method": "Profiled_CCTM_fair",
+  "distribution": "skew_mixture",
+  "scenario": "health",
+  "replicate": 819,
+  "seed": 20261409000819,
+  "threshold": 25.0,
+  "threshold_source": "CCTM_ALPHA_0.04_DELTA_0.01",
+  "first_alarm": -1,
+  "prefault_alarm": 0,
+  "detected_after_change": 0,
+  "delay": 244,
+  "censored": 1,
+  "max_statistic": NaN,
+  "runtime_seconds": 2.77420357399933,
+  "peak_memory_mb": 191.22265625,
+  "atom_count_final": "",
+  "exact_fallback_count": 0,
+  "numeric_status": "UNKNOWN",
+  "error_message": "NumericUnknown('UNKNOWN at time 353: root too close to old atom to certify binary64 ordering')\nTraceback (most recent call last):\n  File \"/root/epprm/EPPRM_COMPLETE_RESEARCH_PACKAGE/01_source/cctm_profile/full_domain_cctm_atoms_fast.py\", line 134, in cctm_fullatom_stream\n    rr,incs=_newroots(cy,cx,y,x,lo,hi,E)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/epprm/EPPRM_COMPLETE_RESEARCH_PACKAGE/01_source/cctm_profile/full_domain_cctm_atoms_fast.py\", line 112, in _newroots\n    raise NumericUnknown('root too close to old atom to certify binary64 ordering')\nfull_domain_cctm_atoms_fast.NumericUnknown: root too close to old atom to certify binary64 ordering\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/root/epprm/EPPRM_COMPLETE_RESEARCH_PACKAGE/12_reproduction/run_sharded.py\", line 68, in compute_method\n    out=core.cctm_fullatom_stream(cy,cx,oy,ox,delta=.01,D=.5,C=.1,smooth=1e-6,stop_at_alarm=False,full_path=True)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/epprm/EPPRM_COMPLETE_RESEARCH_PACKAGE/01_source/cctm_profile/full_domain_cctm_atoms_fast.py\", line 151, in cctm_fullatom_stream\n    raise NumericUnknown(f'UNKNOWN at time {t}: {ex}') from ex\nfull_domain_cctm_atoms_fast.NumericUnknown: UNKNOWN at time 353: root too close to old atom to certify binary64 ordering\n"
+}

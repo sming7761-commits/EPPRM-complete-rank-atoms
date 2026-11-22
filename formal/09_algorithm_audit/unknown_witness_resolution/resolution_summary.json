@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "records_resolved": 6,
+  "trajectories": 3,
+  "methods": [
+    "EP_PRM_736",
+    "Profiled_CCTM_fair"
+  ],
+  "certificate_status": "EXACT_RANK_MULTIPRECISION_POINT_WITNESS_NONALARM",
+  "full_profile_recovered": false,
+  "inference": "NONALARM_ONLY"
+}

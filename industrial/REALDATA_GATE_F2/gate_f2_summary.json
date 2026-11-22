@@ -1,0 +1,8 @@
+{
+  "statistical_units": 9,
+  "confirmatory_pass": 5,
+  "cases": 22,
+  "eligible_cases": 12,
+  "fault_information_used_for_selection": false,
+  "protocol": "chronological selection-validation-calibration-control-fault"
+}

@@ -1,0 +1,11 @@
+name: epprm_formal
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=2.3.5
+  - scipy=1.17.0
+  - numba=0.65.1
+  - pandas=2.2.3
+  - psutil=7.2.2
+  - pip

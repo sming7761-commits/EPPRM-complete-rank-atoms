@@ -1,0 +1,9 @@
+distribution,scenario,rep,method,first_alarm,hash_equal,max_wealth_abs_error,semantic_sha256
+gaussian,health,100,EP_PRM_736,0,True,0.0,eaaef30b49b645094041c24a09140717ac2f9cde5b5d5bec025cd1b206d8dd70
+gaussian,health,100,Profiled_CCTM_fair,0,True,0.0,cdd19cd258961a01c8cd23a1eaada416f644b8b1f96cc44f9b0ec3960d668dae
+gaussian,health,100,OLS_PlugIn_PRM,0,True,0.0,ca9240ef36e41272ab6f2500cdda92a65cdbd36e3db5c873a7a70729492eafaa
+gaussian,health,100,Gaussian_GLR,0,True,0.0,3ffbfa9605c163718df7c8803026eced3b2244ea6482d223f783423e5d422ca3
+gaussian,health,100,Gaussian_CUSUM,0,True,0.0,ef65e8b5b6701c64c599f518ced10516ca0e7a3974117599426d2e727390af98
+gaussian,health,100,Conformal_CUSUM,0,True,0.0,9cc86eb1f53de79eba3ac424609140e22dde0cfe8b59c2ab55574cf5939f022a
+gaussian,health,100,Old_K8,0,True,0.0,b59e6f826efd1630ab8880de8e06dd898a1b43c0c754dc4af9f762e8001d2fd9
+gaussian,health,100,Oracle_PRM,0,True,0.0,58ec3aa97c3fc765cfa8484cab8060dccb0e0460075baa859bbf50e5e0ee62fd
